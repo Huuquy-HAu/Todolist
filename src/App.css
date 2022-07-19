@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-image: linear-gradient( 102.7deg, rgba(253,218,255,1) 8.2%, rgba(223,173,252,1) 19.6%, rgba(173,205,252,1) 36.8%, rgba(173,252,244,1) 73.2%, rgba(202,248,208,1) 90.9% );
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+}
+
+.form{
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+  margin: 100px auto;
+  background-color: #fff;
+  font-family: var(--font);
+  border-radius: 16px;
+  font-size: 15px;
+  /* overflow: hidden; */
+  color: #455963;
+  box-shadow: 0 20px 80px rgba(0,0,0,.3);
+}
+
+.newTask,
+.add-btn {
+  border: none;
+  padding: 8px 16px;
   color: white;
+  margin: 10px 0;
+  margin-right: 10px;
+  background: #4acea3;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.newTask:hover,
+.add-btn:hover {
+  background: #08bd87;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hideModal {
+  display: none;
+}
+
+
+.input-form input {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 16px;
+}
+
+.cl-btn {
+  border: none;
+  padding: 8px 16px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-data i {
+  margin: 40px 10px ;
+  font-size: 18px;
+}
+
+.right-data button {
+  border: none;
+  /* padding: auto; */
+  background: white;
+}
+
+.right-data i:hover {
+  color: gray;
+}
+
+.modal-body input {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 16px;
 }
